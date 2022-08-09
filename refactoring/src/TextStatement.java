@@ -1,5 +1,3 @@
-import java.util.Enumeration;
-
 public class TextStatement extends Statement {
 
     public String getFirstResult(Customer aCustomer) {
@@ -12,12 +10,12 @@ public class TextStatement extends Statement {
 
     public String getFooter1(Customer aCustomer) {
         return "Amount owed is " +
-                String.valueOf(aCustomer.getTotalCharge()) + "\n";
+            String.valueOf(aCustomer.getTotalCharge()) + "\n";
     }
 
     public String getFooter2(Customer aCustomer) {
         return "You earned " +
-                String.valueOf(aCustomer.getTotalFrequentRenterPoints()) +
-                " frequent renter points";
+            String.valueOf(aCustomer.getTotalFrequentRenterPoints()) +
+            " frequent renter points";
     }
 }
